@@ -307,8 +307,7 @@ $(document).ready(function () {
 
 
 import { Star } from '../js/star.js'
-import '../js/pagePilling/examples.css'
-import '../js/pagePilling/jquery.pagepiling.css'
+import '../js/jquery.js';
 import '../js/pagePilling/jquery.pagepiling.min.js'
 import Typed from 'typed.js';
 export default {
@@ -467,6 +466,10 @@ export default {
 </script>
     
 <style>
+
+@import '../js/pagePilling/examples.css';
+@import '../js/pagePilling/jquery.pagepiling.css';
+
 :root {
   --swiper-theme-color: #007aff;
   --bs-body-color: darkgray;
