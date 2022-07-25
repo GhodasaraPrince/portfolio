@@ -20,7 +20,9 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     .fp-nav {
         width:auto;
         top: auto;
-        left: 50%;
+        left: 40%;
+		height: 50px;
+    	top: 4% !important;
         bottom: 32px;
         -webkit-transform: translate3d(-50%, 0, 0);
         transform: translate3d(-50%, 0, 0)
@@ -38,9 +40,6 @@ form,fieldset,input,textarea,p,blockquote,th,td {
         display:-webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end
     }
 }
 

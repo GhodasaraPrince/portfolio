@@ -13,7 +13,7 @@
     <div>
       <div id="pagepiling">
 
-      
+
         <div class="section" id="section1">
           <div class="main" id="s1">
             <div class="typed-wrapper">
@@ -25,16 +25,19 @@
           </div>
         </div>
 
-        <div class="section">
+        <div class="section pp-scrollable">
           <div class="intro" id="s2">
             <h1 class="Heading-1">Skills</h1>
-            <span class="color-1"><i> Below are the metion skills that I know currently other then this i'm learning
-                microsoft azure,
-                python, react.</i></span>
-            <br />
-            <span class="color-1"><i>Visual studio 2022, vs code, SSMS, npm, git, yarn this are the tools that im
-                familar
-                with.</i></span>
+            <div class="pad-20">
+              <span class="color-1"><i> Below are the metion skills that I know currently other then this i'm learning
+                  microsoft azure,
+                  python, react.</i></span>
+              <br />
+              <span class="color-1"><i>Visual studio 2022, vs code, SSMS, npm, git, yarn this are the tools that im
+                  familar
+                  with.</i></span>
+            </div>
+
 
             <div class="row-project-box row" style="margin: auto;margin-top: 30px;">
               <div class="col-project-box col-md-6 col-lg-4 col-xl-3">
@@ -88,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="section" id="section3">
+        <div class="section pp-scrollable" id="section3">
           <div class="intro" id="s3" style="position: relative;">
             <h1 class="Heading-1">Experience</h1>
             <!-- <p>Just as you expected!</p> -->
@@ -111,117 +114,133 @@
                   <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                      <div class="flex-wrapper-timeline">
-                        <div class="flex-inline-wrapper-fs">
-                          <span class="title">
-                            2013-2015
-                          </span>
-                          <span class="bText">
-                            Secondary High School & High School(GHSEB)
-                          </span>
-                          <span class="bText">
-                            Plazma International School, Junagadh
-                          </span>
-                          <span class="bText">
-                            SHC 90%
-                            HSC 78%
-                          </span>
+                      <div class="row w-80">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="flex-inline-wrapper-fs">
+                            <span class="title">
+                              2013-2015
+                            </span>
+                            <span class="bText">
+                              Secondary High School & High School(GHSEB)
+                            </span>
+                            <span class="bText">
+                              Plazma International School, Junagadh
+                            </span>
+                            <span class="bText">
+                              SHC 90%
+                              HSC 78%
+                            </span>
+                          </div>
                         </div>
-                        <div class="flex-inline-wrapper-fe">
-                          <span class="title">
-                            2015-2019
-                          </span>
-                          <span class="bText">
-                            B.Tech (Computer Science & Engg)
-                          </span>
-                          <span class="bText">
-                            Parul University, Baroda
-                          </span>
-                          <span class="bText">
-                            CGPA 6.84
-                          </span>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="flex-inline-wrapper-fe">
+                            <span class="title">
+                              2015-2019
+                            </span>
+                            <span class="bText">
+                              B.Tech (Computer Science & Engg)
+                            </span>
+                            <span class="bText">
+                              Parul University, Baroda
+                            </span>
+                            <span class="bText">
+                              CGPA 6.84
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="flex-wrapper-timeline">
-                        <div class="flex-inline-wrapper-fs title" style="width: 50%;">
-                          <span class="title">
-                            2020-2021
-                          </span>
-                          <span class="bText  ">
-                            ASP.NET DEVELOPER
-                          </span>
-                          <span class=" bText">
-                            Intellial Solution pvt ltd
-                          </span>
-                          <span class=" bText">
-                            Tech Use: ASP.NET MVC, Vue Js, Sql(SSMS)
-                          </span>
-                          <span class=" bText">
-                            ASP.NET Web Form
-                          </span>
-                          <span class=" bText">
-                            Areas worked on: Backend, Frontend, Database
-                          </span>
+                      <div class="row w-80">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="flex-inline-wrapper-fs title">
+                            <span class="title">
+                              2020-2021
+                            </span>
+                            <span class="bText  ">
+                              ASP.NET DEVELOPER
+                            </span>
+                            <span class=" bText">
+                              Intellial Solution pvt ltd
+                            </span>
+                            <span class=" bText">
+                              Tech Use: ASP.NET MVC, Vue Js, Sql(SSMS)
+                            </span>
+                            <span class=" bText">
+                              ASP.NET Web Form
+                            </span>
+                            <span class=" bText">
+                              Areas worked on: Backend, Frontend, Database
+                            </span>
 
+                          </div>
                         </div>
-                        <div class="flex-inline-wrapper-fe" style="width: 50%;">
-                          <span class="title">
-                            Project Description
-                          </span>
-                          <span class="bText" style="text-align: right;">
-                            We have a product-based client so we are making a site on a product which is PCB(Printed
-                            Circuit Board).Online selling of PCBs, I made four services in that particular PCB &
-                            interact with different systems via APIs. In this project, I made plenty of efficient logic
-                            for their different services.
-                            Link: <a href="https://www.pcbpower.com/page/pcb-fabrication" target="_blank">PCB Power</a>
-                          </span>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="flex-inline-wrapper-fe">
+                            <span class="title">
+                              Project Description
+                            </span>
+                            <span class="bText" style="text-align: right;">
+                              We have a product-based client so we are making a site on a product which is PCB(Printed
+                              Circuit Board).Online selling of PCBs, I made four services in that particular PCB &
+                              interact with different systems via APIs. In this project, I made plenty of efficient
+                              logic
+                              for their different services.
+                              Link: <a href="https://www.pcbpower.com/page/pcb-fabrication" target="_blank">PCB
+                                Power</a>
+                            </span>
 
 
+                          </div>
                         </div>
                       </div>
+
                     </div>
 
 
                     <div class="swiper-slide">
-                      <div class="flex-wrapper-timeline">
-                        <div class="flex-inline-wrapper-fs title" style="width: 50%;">
-                          <span class="title">
-                            2021-Present
-                          </span>
-                          <span class="bText  ">
-                            Senior Software Engineer
-                          </span>
-                          <span class=" bText">
-                            Capgemini
-                          </span>
-                          <span class=" bText">
-                            Tech Use: ASP.NET Core, Angular Js, Sql(SSMS)
-                          </span>
-                          <span class=" bText">
-                            Docker
-                          </span>
-                          <span class=" bText">
-                            Areas worked on: Backend, Frontend, Database,
-                          </span>
-                          <span class=" bText">
-                            Hosting, Cross Team Communication
-                          </span>
+                      <div class="row w-80">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="flex-inline-wrapper-fs title">
+                            <span class="title">
+                              2021-Present
+                            </span>
+                            <span class="bText  ">
+                              Senior Software Engineer
+                            </span>
+                            <span class=" bText">
+                              Capgemini
+                            </span>
+                            <span class=" bText">
+                              Tech Use: ASP.NET Core, Angular Js, Sql(SSMS)
+                            </span>
+                            <span class=" bText">
+                              Docker
+                            </span>
+                            <span class=" bText">
+                              Areas worked on: Backend, Frontend, Database,
+                            </span>
+                            <span class=" bText">
+                              Hosting, Cross Team Communication
+                            </span>
+                          </div>
                         </div>
-                        <div class="flex-inline-wrapper-fe" style="width: 50%;">
-                          <span class="title">
-                            Project Description
-                          </span>
-                          <span class="bText" style="text-align: right;">
-                            In this Project, we have to do a project which renders all other client's product-based
-                            projects in this shell application just by using their endpoint. in this project, I found a
-                            way to use module federation and render other micro frontends (other applications) in our
-                            shell application, make the authentication, authorization, and routing of the whole
-                            application, and also work with other teams to configure their application so they can
-                            render their application in our app and did the hosting of the projects using docker.
-                            Documented everything so that others can take reference.
-                          </span>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="flex-inline-wrapper-fe">
+                            <span class="title">
+                              Project Description
+                            </span>
+                            <span class="bText" style="text-align: right;">
+                              In this Project, we have to do a project which renders all other client's product-based
+                              projects in this shell application just by using their endpoint. in this project, I found
+                              a
+                              way to use module federation and render other micro frontends (other applications) in our
+                              shell application, make the authentication, authorization, and routing of the whole
+                              application, and also work with other teams to configure their application so they can
+                              render their application in our app and did the hosting of the projects using docker.
+                              Documented everything so that others can take reference.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -234,11 +253,13 @@
 
         <div class="section" id="section4">
           <div class="intro" id="s4">
-             <div class="position-relative">
+            <div class="position-relative">
               <span class="Heading-1"> Certification</span>
               <div class="center">
-                <a href="https://www.hackerrank.com/certificates/04a35c6371b8" target="_blank"> <span class="socials">HackerRank C# Certificate</span> </a>
-                <a href="https://www.hackerrank.com/certificates/f5741964671c" target="_blank"> <span class="socials">HackerRank JavaScript Certificate</span></a>
+                <a href="https://www.hackerrank.com/certificates/04a35c6371b8" target="_blank"> <span
+                    class="socials">HackerRank C# Certificate</span> </a>
+                <a href="https://www.hackerrank.com/certificates/f5741964671c" target="_blank"> <span
+                    class="socials">HackerRank JavaScript Certificate</span></a>
                 <a href="javascript:void"><span class="socials">Linkdin C# Certificate</span></a>
                 <a href="javascript:void"><span class="socials">Linkdin JavaScript Certificate</span></a>
               </div>
@@ -246,7 +267,7 @@
             <div style="padding-top: 80px;" class="position-relative">
               <span class="Heading-1"> Socials</span>
               <div class="socials-wrapper">
-                
+
                 <a href="https://www.linkedin.com/in/prince-g-728148197/" target="_blank"> <i
                     class="fa fa-linkedin socials"></i></a>
                 <a href="mailto:prince.ghodasara43@gmail.com"> <i class="fa fa-google socials"></i></a>
@@ -254,7 +275,7 @@
                     class="fa fa-instagram socials"></i></a>
               </div>
             </div>
-         
+
           </div>
         </div>
       </div>
@@ -307,7 +328,8 @@ $(document).ready(function () {
 
 
 import { Star } from '../js/star.js'
-import '../js/jquery.js';
+import '../js/pagePilling/examples.css'
+import '../js/pagePilling/jquery.pagepiling.css'
 import '../js/pagePilling/jquery.pagepiling.min.js'
 import Typed from 'typed.js';
 export default {
@@ -456,36 +478,56 @@ export default {
   },
   mounted() {
     this.initPagePilling();
-    this.initP5Draw('s1');
-    this.initP5Draw('s2');
-    this.initP5Draw('s3');
-    this.initP5Draw('s4');
+    // this.initP5Draw('s1');
+    // this.initP5Draw('s2');
+    // this.initP5Draw('s3');
+    // this.initP5Draw('s4');
     this.initTyped();
   },
 };
 </script>
     
 <style>
-
-@import '../js/pagePilling/examples.css';
-@import '../js/pagePilling/jquery.pagepiling.css';
-
 :root {
   --swiper-theme-color: #007aff;
   --bs-body-color: darkgray;
 }
 
-a{
+.w-80 {
+  width: 80%;
+}
+
+.section::-webkit-scrollbar {
+  width: 5px;
+}
+
+.section::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, #1f60a2 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.pad-20 {
+  padding: 0 20px;
+}
+
+a {
 
   text-decoration: none !important;
 }
 
-.position-relative{
+.position-relative {
   position: relative;
   z-index: 999999;
 }
 
-.center{
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -514,7 +556,7 @@ a{
 
 .Heading-1 {
   color: darkgray;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .color-1 {
