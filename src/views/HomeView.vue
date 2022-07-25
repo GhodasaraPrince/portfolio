@@ -329,6 +329,7 @@ $(document).ready(function () {
 
 import { Star } from '../js/star.js'
 import '../js/jquery.js'
+import '../assets/fa.css'
 import '../js/pagePilling/examples.css'
 import '../js/pagePilling/jquery.pagepiling.css'
 import '../js/pagePilling/jquery.pagepiling.min.js'
@@ -493,6 +494,14 @@ export default {
 :root {
   --swiper-theme-color: #007aff;
   --bs-body-color: darkgray;
+}
+
+.fa-instagram:before{
+    content:"\f16d"
+}
+
+.section{
+  overflow-x: hidden
 }
 
 .w-80 {
