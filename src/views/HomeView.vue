@@ -328,9 +328,11 @@ $(document).ready(function () {
 
 
 import { Star } from '../js/star.js'
+import '../js/jquery.js'
 import '../js/pagePilling/examples.css'
 import '../js/pagePilling/jquery.pagepiling.css'
 import '../js/pagePilling/jquery.pagepiling.min.js'
+
 import Typed from 'typed.js';
 export default {
   name: "HomeView",
