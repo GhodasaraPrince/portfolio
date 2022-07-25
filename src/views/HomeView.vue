@@ -382,10 +382,9 @@ export default {
       $('#pagepiling').pagepiling({
         direction: 'horizontal',
         menu: '#fp-nav',
-        // anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         sectionsColor: ['#000', '#000', '#000', '#000'],
         navigation: false,
-        onLeave: (index, nextIndex, direction) => {
+        onLeave: (index, nextIndex) => {
           console.log({ index: index, next: nextIndex });
           this.anchors.forEach(x => x.isActive = false);
           this.anchors[nextIndex - 1].isActive = true;
@@ -398,9 +397,10 @@ export default {
       const s = (sketch) => {
         sketch.setup = () => {
           var temp1 = document.getElementById('home').getBoundingClientRect();
-          const heightcs = document.getElementById('home').offsetHeight;
+          const heightcs = document.getElementById('home').offsetHeight - 5;
           let cnv = sketch.createCanvas(temp1.width, heightcs);
           cnv.parent(id)
+          debugger;
           cnv.style('position', 'absolute');
           cnv.style('top', '0');
           cnv.style('left', '0');
@@ -487,6 +487,12 @@ export default {
     this.initP5Draw('s4');
     this.initTyped();
   },
+  created() {
+    window.addEventListener("resize", this.resizeCanvas);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.resizeCanvas);
+  },
 };
 </script>
     
@@ -496,11 +502,11 @@ export default {
   --bs-body-color: darkgray;
 }
 
-.fa-instagram:before{
-    content:"\f16d"
+.fa-instagram:before {
+  content: "\f16d"
 }
 
-.section{
+.section {
   overflow-x: hidden
 }
 
