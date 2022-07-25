@@ -480,10 +480,10 @@ export default {
   },
   mounted() {
     this.initPagePilling();
-    // this.initP5Draw('s1');
-    // this.initP5Draw('s2');
-    // this.initP5Draw('s3');
-    // this.initP5Draw('s4');
+    this.initP5Draw('s1');
+    this.initP5Draw('s2');
+    this.initP5Draw('s3');
+    this.initP5Draw('s4');
     this.initTyped();
   },
 };
