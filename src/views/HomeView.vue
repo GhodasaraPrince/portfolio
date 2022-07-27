@@ -91,6 +91,54 @@
             </div>
           </div>
         </div>
+
+        <div class="section pp-scrollable" id="section5">
+          <div class="intro" id="s5">
+            <div class="typed-wrapper">
+              <span class="Heading-1 ">
+                About Me
+              </span>
+            </div>
+            <div class="w-80 m-auto flex-col">
+              <span class="color-1 pad-5">
+                <i> As a developer, I really like to solve different kinds of problems whether it's on the frontend, backend, or SQL.
+                 Usually, in my free time, I solve problems on hackerrank or help other team members with their issue.
+                </i>
+              </span>
+              <span class="color-1 pad-5">
+                <i> 
+                    other than that I really like to learn new stuff in coding like doing the same thing but using different methods
+                    I think it helps you to understand the language better.
+                </i>
+              </span>
+              <span class="color-1 pad-5">
+                <i> Apart from being a developer, I enjoy most of my time following a number of sci-fi and fantasy genre
+                  movies, television shows, and animes.
+                </i>
+              </span>
+              <span class="color-1 pad-5">
+                <i>I spend a lot of my free time exploring the latest technology
+                  advancements like web3, web5, and blockchain.
+                </i>
+              </span>
+              <span class="color-1 pad-5">
+                <i>
+                  I also play volleyball, chess, snooker, competitive games, etc.
+                </i>
+              </span>
+              <span class="color-1 pad-5">
+                <i>
+                  Other than that I like to listen to music a lot, I listen to all kinds of genres.
+                </i>
+              </span>
+              <span class="color-1 pad-5">
+                <i>
+                  Now I'm also really into fitness so doing gym every day.
+                </i>
+              </span>
+            </div>
+          </div>
+        </div>
         <div class="section pp-scrollable" id="section3">
           <div class="intro" id="s3" style="position: relative;">
             <h1 class="Heading-1">Experience</h1>
@@ -360,6 +408,11 @@ export default {
           menuAnchor: 'forthPage',
           href: '#forthPage',
           isActive: false,
+        },
+        {
+          menuAnchor: 'fifthPage',
+          href: '#fifthPage',
+          isActive: false,
         }
       ],
     }
@@ -382,7 +435,7 @@ export default {
       $('#pagepiling').pagepiling({
         direction: 'horizontal',
         menu: '#fp-nav',
-        sectionsColor: ['#000', '#000', '#000', '#000'],
+        sectionsColor: ['#000', '#000', '#000', '#000', '#000'],
         navigation: false,
         onLeave: (index, nextIndex) => {
           console.log({ index: index, next: nextIndex });
@@ -400,7 +453,6 @@ export default {
           const heightcs = document.getElementById('home').offsetHeight - 5;
           let cnv = sketch.createCanvas(temp1.width, heightcs);
           cnv.parent(id)
-          debugger;
           cnv.style('position', 'absolute');
           cnv.style('top', '0');
           cnv.style('left', '0');
@@ -430,7 +482,7 @@ export default {
           let sx = sketch.map(drops.x / drops.z, 0, 1, 0, sketch.width)
           let sy = sketch.map(drops.y / drops.z, 0, 1, 0, sketch.height)
           let distace = sketch.map(drops.z, 0, sketch.width, 5, 0);
-          sketch.ellipse(sx, sy, distace, distace);
+          sketch.ellipse(sx, sy, distace + 1.5, distace + 1.5);
 
           c = sketch.color(255, 255, 255);
           sketch.stroke(c);
@@ -439,7 +491,7 @@ export default {
           let px = sketch.map(drops.x / drops.pz, 0, 1, 0, sketch.width);
           let py = sketch.map(drops.y / drops.pz, 0, 1, 0, sketch.height);
           drops.pz = drops.z;
-          sketch.line(px, py, sx, sy);
+          sketch.line(px, py, sx + 1.5, sy + 1.5);
         }
 
         sketch.update = (drops) => {
@@ -477,6 +529,9 @@ export default {
       this.anchors.forEach(x => x.isActive = false);
       this.anchors[index].isActive = true;
       $.fn.pagepiling.moveTo(index + 1);
+    },
+    resizeCanvas() {
+      window.location.reload();
     }
   },
   mounted() {
@@ -485,13 +540,14 @@ export default {
     this.initP5Draw('s2');
     this.initP5Draw('s3');
     this.initP5Draw('s4');
+    this.initP5Draw('s5');
     this.initTyped();
   },
   created() {
-    window.addEventListener("resize", this.resizeCanvas);
+    window.addEventListener("resize", () => { this.resizeCanvas() });
   },
   destroyed() {
-    window.removeEventListener("resize", this.resizeCanvas);
+    window.removeEventListener("resize", () => { this.resizeCanvas() });
   },
 };
 </script>
@@ -506,12 +562,27 @@ export default {
   content: "\f16d"
 }
 
+.pad-5{
+  padding: 5px;
+  font-size: 17px;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  padding: 30px
+}
+
 .section {
   overflow-x: hidden
 }
 
 .w-80 {
   width: 80%;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .section::-webkit-scrollbar {
