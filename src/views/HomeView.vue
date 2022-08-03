@@ -19,7 +19,6 @@
             <div class="typed-wrapper">
               <span class="Heading-1 type-line1">
               </span>
-              <!-- style="color:#2c3e50" -->
               <span class="type color-1"></span>
             </div>
           </div>
@@ -76,7 +75,7 @@
                 <a href="javascript:void" class="project-box">
                   <div class="project-box-inner">
                     <h4>VUE</h4>
-                    <div class="project-category">FRONTEND</div>
+                    <div class="project-category">Frontend</div>
                   </div>
                 </a>
               </div>
@@ -669,6 +668,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
 }
 
 .flex-inline-wrapper-fe {
@@ -733,7 +733,6 @@ a {
 
 .project-box {
   display: block;
-  padding-bottom: 30%;
   position: relative;
   border: 1px solid rgba(169, 169, 169, 0.5);
   -webkit-transition: all 0.3s ease;
@@ -742,9 +741,6 @@ a {
 }
 
 .project-box-inner {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   padding: 2.14rem 1.928rem;
@@ -779,20 +775,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  .project-box {
-    padding-bottom: 50%;
-  }
-
   .project-category {
-    position: absolute;
     bottom: 1.2rem;
   }
 }
 
 .project-box-inner {
-  position: absolute;
-  left: 0;
-  top: 0;
+ 
   width: 100%;
   height: 100%;
   padding: 2.14rem 1.928rem;
